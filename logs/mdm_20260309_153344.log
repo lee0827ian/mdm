@@ -1,0 +1,182 @@
+2026-03-09 15:33:44,064 [INFO] ============================================================
+2026-03-09 15:33:44,065 [INFO] MDM 표준화 엔진 v1.1 시작
+2026-03-09 15:33:44,065 [INFO] 입력 파일: data/sample_input2.csv
+2026-03-09 15:33:44,069 [INFO] 총 35행 로드
+2026-03-09 15:33:44,089 [INFO] [1] RawInputNormalizer 완료
+2026-03-09 15:33:44,548 [INFO] [DB] StandardDBLoader 초기화 완료
+2026-03-09 15:33:44,550 [INFO] [1/35] 관리번호=28720870 품명=EVA폼롤러_반원형 / 60cm / 딥블랙 / 14,9
+2026-03-09 15:33:44,566 [INFO]   [6] FactFinder 스킵 (policy=BRAND_CENTERED)
+2026-03-09 15:33:44,611 [INFO]   [9] 품명매핑: 'EVA폼롤러_반원형 / 60cm / 딥블랙 / 14,900원' → 'EVA폼' [low]
+2026-03-09 15:33:44,612 [INFO]   [10] 속성미충족: ['사이즈', '재질', '용량', '중량', '색상', '입수량']
+2026-03-09 15:33:44,837 [INFO]   [11] 제조사 비표준: 'EVA 폼롤러 반원형' → 후보: []
+2026-03-09 15:33:44,838 [INFO]   → 품명:EVA폼 | 제조사:EVA 폼롤러 반원형 | 모델명:1 | 정책:BRAND_CENTERED | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_ATTR_INCOMPLETE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:44,839 [INFO] [2/35] 관리번호=28720872 품명=16.5cm x 40cm , 1275g , 24,900
+2026-03-09 15:33:44,840 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:45,304 [INFO]   [9] 품명매핑: '16.5cm x 40cm , 1275g , 24,900원' → '16.5cm x 40cm , 1275g , 24,900원' [low]
+2026-03-09 15:33:45,521 [INFO]   [11] 제조사 비표준: 'AB Slide Rebound' → 후보: []
+2026-03-09 15:33:45,522 [INFO]   → 품명:16.5cm x 40cm , 1275g , 24,900원 | 제조사:AB Slide Rebound | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:45,522 [INFO] [3/35] 관리번호=28720892 품명=DC12V / DC24V 사용 패닉바락
+2026-03-09 15:33:45,523 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:45,564 [INFO]   [9] 품명매핑: 'DC12V / DC24V 사용 패닉바락' → '패닉바' [low]
+2026-03-09 15:33:45,565 [INFO]   [10] 속성미충족: ['사이즈', '재질', '색상', '타입', '입수량']
+2026-03-09 15:33:45,565 [INFO]   → 품명:패닉바 | 제조사:시중품 | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_STORE_AS_MAKER', 'FLAG_CONFLICT_MODEL', 'FLAG_CATEGORY_UNKNOWN', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 15:33:45,566 [INFO] [4/35] 관리번호=28721041 품명=STS P/W M100 봉=500개
+2026-03-09 15:33:45,566 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:45,990 [INFO]   [9] 품명매핑: 'STS P/W M100 봉=500개' → 'STS P/W M100 봉=500개' [low]
+2026-03-09 15:33:45,991 [INFO]   → 품명:STS P/W M100 봉=500개 | 제조사:시중품 | 모델명:40 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:33:45,992 [INFO] [5/35] 관리번호=28721055 품명=CA202
+2026-03-09 15:33:45,992 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:46,401 [INFO]   [9] 품명매핑: 'CA202' → 'CA202' [low]
+2026-03-09 15:33:46,635 [INFO]   [11] 제조사 비표준: '144-202-000-105' → 후보: []
+2026-03-09 15:33:46,636 [INFO]   → 품명:CA202 | 제조사:144-202-000-105 | 모델명:2 | 정책:GENERIC | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:46,637 [INFO] [6/35] 관리번호=28721059 품명=CA202
+2026-03-09 15:33:46,637 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:47,030 [INFO]   [9] 품명매핑: 'CA202' → 'CA202' [low]
+2026-03-09 15:33:47,260 [INFO]   [11] 제조사 비표준: '144-202-000-215' → 후보: []
+2026-03-09 15:33:47,260 [INFO]   → 품명:CA202 | 제조사:144-202-000-215 | 모델명:2 | 정책:GENERIC | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:47,261 [INFO] [7/35] 관리번호=28721070 품명=18.35g, BLACK, 32Ω, 20~20kHz, 
+2026-03-09 15:33:47,793 [INFO]   [9] 품명매핑: '18.35g, BLACK, 32Ω, 20~20kHz, USB C TYPE' → '18.35g, BLACK, 32Ω, 20~20kHz, USB C TYPE' [low]
+2026-03-09 15:33:48,018 [INFO]   [11] 제조사 비표준: 'EO-IC100BBEGKR' → 후보: ['EGK', 'EO EDMOND', 'GENTEC-EO']
+2026-03-09 15:33:48,019 [INFO]   → 품명:18.35g, BLACK, 32Ω, 20~20kHz, USB C TYPE | 제조사:EO-IC100BBEGKR | 모델명:1 | 정책:MODEL_CENTERED | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:48,019 [INFO] [8/35] 관리번호=28721109 품명=DIA8.2mm, 2/4mm, 일체형 동축 케이블, 비
+2026-03-09 15:33:48,514 [INFO]   [9] 품명매핑: 'DIA8.2mm, 2/4mm, 일체형 동축 케이블, 비접촉식' → 'DIA8.2mm, 2/4mm, 일체형 동축 케이블, 비접촉식' [low]
+2026-03-09 15:33:48,840 [INFO]   [11] 제조사 비표준: '111-902-000-011-A5-B1-C72-D2-E10000-F2-G9800-H10' → 후보: []
+2026-03-09 15:33:48,841 [INFO]   → 품명:DIA8.2mm, 2/4mm, 일체형 동축 케이블, 비접촉식 | 제조사:111-902-000-011-A5-B1-C72-D2-E10000-F2-G9800-H10 | 모델명:2 | 정책:MODEL_CENTERED | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:48,842 [INFO] [9/35] 관리번호=28721118 품명=K1Z-XSC-PU/내경 40mm*10M
+2026-03-09 15:33:48,842 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:49,282 [INFO]   [9] 품명매핑: 'K1Z-XSC-PU/내경 40mm*10M' → 'K1Z-XSC-PU/내경 40mm*10M' [low]
+2026-03-09 15:33:49,282 [INFO]   → 품명:K1Z-XSC-PU/내경 40mm*10M | 제조사:시중품 | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:33:49,283 [INFO] [10/35] 관리번호=28721143 품명=일반 KF-AD
+2026-03-09 15:33:49,284 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:49,723 [INFO]   [9] 품명매핑: '일반 KF-AD' → 'KF-AD마스크' [low]
+2026-03-09 15:33:49,724 [INFO]   [10] 속성미충족: ['사이즈', '재질', '색상', '등급', '사용시간', '입수량', '타입']
+2026-03-09 15:33:49,724 [INFO]   → 품명:KF-AD마스크 | 제조사:시중품 | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_STORE_AS_MAKER', 'FLAG_CONFLICT_MODEL', 'FLAG_CATEGORY_UNKNOWN', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 15:33:49,725 [INFO] [11/35] 관리번호=28721145 품명=내경 32mm*10M
+2026-03-09 15:33:49,725 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:50,335 [INFO]   [9] 품명매핑: '내경 32mm*10M' → '내경 32mm*10M' [low]
+2026-03-09 15:33:50,335 [INFO]   → 품명:내경 32mm*10M | 제조사:시중품 | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:33:50,336 [INFO] [12/35] 관리번호=28721153 품명=IPC707
+2026-03-09 15:33:50,337 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:51,009 [INFO]   [9] 품명매핑: 'IPC707' → 'IPC707' [low]
+2026-03-09 15:33:51,586 [INFO]   [11] 제조사 비표준: '244-707-000-012-A3-B1-C7554-D3-E5-F5000-G2' → 후보: []
+2026-03-09 15:33:51,587 [INFO]   → 품명:IPC707 | 제조사:244-707-000-012-A3-B1-C7554-D3-E5-F5000-G2 | 모델명:2 | 정책:GENERIC | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:51,588 [INFO] [13/35] 관리번호=28721198 품명=핸드 파이프 탭(NPT 용), Maker: YAMAWA
+2026-03-09 15:33:51,589 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:52,343 [INFO]   [9] 품명매핑: '핸드 파이프 탭(NPT 용), Maker: YAMAWA, Model: TNPT01L, 규격: 1/16-27' → '핸드 파이프 탭(NPT 용), Maker: YAMAWA, Model: TNPT01L, 규격: 1/16-27' [low]
+2026-03-09 15:33:52,344 [INFO]   → 품명:핸드 파이프 탭(NPT 용), Maker: YAMAWA, Model: TNPT01L, 규격: 1/16-27 | 제조사:시중품 | 모델명:2 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:33:52,345 [INFO] [14/35] 관리번호=28721199 품명=핸드 파이프 탭(NPT 용), Maker: YAMAWA
+2026-03-09 15:33:52,345 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:53,019 [INFO]   [9] 품명매핑: '핸드 파이프 탭(NPT 용), Maker: YAMAWA, Model: TNPT02L, 규격: 1/8-27' → '핸드 파이프 탭(NPT 용), Maker: YAMAWA, Model: TNPT02L, 규격: 1/8-27' [low]
+2026-03-09 15:33:53,020 [INFO]   → 품명:핸드 파이프 탭(NPT 용), Maker: YAMAWA, Model: TNPT02L, 규격: 1/8-27 | 제조사:시중품 | 모델명:2 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:33:53,021 [INFO] [15/35] 관리번호=28721206 품명=Maker: HP, Model: HP 527pf Mon
+2026-03-09 15:33:53,022 [INFO]   FactFinder 실행: maker_missing
+2026-03-09 15:33:53,022 [INFO]   네이버 검색: Maker: HP, Model: HP 527pf Monitor, S/N: VNN5250V32, Type: 68.58cm (27˝), 해상도: 1920 x 1080 (FHD), 전원: 100~240VAC
+2026-03-09 15:33:55,094 [INFO]   [9] 품명매핑: 'Maker: HP, Model: HP 527pf Monitor, S/N: VNN5250V32, Type: 68.58cm (27˝), 해상도: 1920 x 1080 (FHD), 전원: 100~240VAC' → 'Maker: HP, Model: HP 527pf Monitor, S/N: VNN5250V32, Type: 68.58cm (27˝), 해상도: 1920 x 1080 (FHD), 전원: 100~240VAC' [low]
+2026-03-09 15:33:55,095 [INFO]   → 품명:Maker: HP, Model: HP 527pf Monitor, S/N: VNN5250V32, Type: 68.58cm (27˝), 해상도: 1920 x 1080 (FHD), 전원: 100~240VAC | 제조사:시중품 | 모델명:10 | 정책:MODEL_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE']
+2026-03-09 15:33:55,096 [INFO] [16/35] 관리번호=28721212 품명=STEEL, 8bar
+2026-03-09 15:33:55,096 [INFO]   [6] FactFinder 스킵 (policy=SPEC_CENTERED)
+2026-03-09 15:33:55,111 [INFO]   [9] 품명매핑: 'STEEL, 8bar' → 'TEE' [medium]
+2026-03-09 15:33:55,111 [INFO]   [10] 속성미충족: ['사이즈', '외경', '재질', '색상', '중량', '타입']
+2026-03-09 15:33:55,480 [INFO]   [11] 제조사 비표준: 'PRF308' → 후보: []
+2026-03-09 15:33:55,481 [INFO]   → 품명:TEE | 제조사:PRF308 | 모델명:1 | 정책:SPEC_CENTERED | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_ATTR_INCOMPLETE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:55,482 [INFO] [17/35] 관리번호=28721228 품명=NOTEBOOK_LEGION PRO 7I_LENOVO_
+2026-03-09 15:33:55,483 [INFO]   FactFinder 실행: maker_missing
+2026-03-09 15:33:55,483 [INFO]   네이버 검색: NOTEBOOK_LEGION PRO 7I_LENOVO_16INCH GEN 10
+2026-03-09 15:33:57,063 [INFO]   NaverFact 성공: ['레노버']
+2026-03-09 15:33:57,071 [INFO]   [9] 품명매핑: 'NOTEBOOK_LEGION PRO 7I_LENOVO_16INCH GEN 10' → '노트북' [high]
+2026-03-09 15:33:57,071 [INFO]   [10] 속성미충족: ['사이즈', 'CPU', '그래픽카드', '패널', '메모리용량', '저장장치', 'ODD', '입출력포트', '네트워크', '구성']
+2026-03-09 15:33:57,302 [INFO]   [11] 제조사 비표준: '레노버' → 후보: []
+2026-03-09 15:33:57,303 [INFO]   → 품명:노트북 | 제조사:레노버 | 모델명:5 | 정책:MODEL_CENTERED | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_ATTR_INCOMPLETE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:57,303 [INFO] [18/35] 관리번호=28721242 품명=밀워키 M18 FPD2-0X 충전햄머드릴 본체 젠3 손
+2026-03-09 15:33:57,304 [INFO]   FactFinder 실행: maker_missing
+2026-03-09 15:33:57,304 [INFO]   네이버 검색: 밀워키 M18 FPD2-0X 충전햄머드릴 본체 젠3 손잡이포함 BL모터
+2026-03-09 15:33:58,591 [INFO]   NaverFact 성공: ['밀워키']
+2026-03-09 15:33:58,603 [INFO]   [9] 품명매핑: '밀워키 M18 FPD2-0X 충전햄머드릴 본체 젠3 손잡이포함 BL모터' → '충전햄머드릴' [low]
+2026-03-09 15:33:58,603 [INFO]   [10] 속성미충족: ['사이즈', 'RPM(분당회전수)', '중량', '토크(회전력)', '적용악세서리사이즈', '정격전력']
+2026-03-09 15:33:58,804 [INFO]   [11] 제조사 비표준: '밀워키' → 후보: ['유키']
+2026-03-09 15:33:58,804 [INFO]   → 품명:충전햄머드릴 | 제조사:밀워키 | 모델명:1 | 정책:MODEL_CENTERED | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_ATTR_INCOMPLETE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:33:58,805 [INFO] [19/35] 관리번호=28721247 품명=양뿔곡괭이
+2026-03-09 15:33:58,805 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:58,821 [INFO]   [9] 품명매핑: '양뿔곡괭이' → '곡괭이' [high]
+2026-03-09 15:33:58,821 [INFO]   [10] 속성미충족: ['사이즈', '재질', '중량', '색상', '타입']
+2026-03-09 15:33:58,822 [INFO]   → 품명:곡괭이 | 제조사:시중품 | 모델명:2 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_CATEGORY_UNKNOWN', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 15:33:58,822 [INFO] [20/35] 관리번호=28721248 품명=직경 80mm, 주문 제작품이므로 구매처 지정: 우리측
+2026-03-09 15:33:58,823 [INFO]   처리불가: 제작품/주문제작 → 자동표준화 불가
+2026-03-09 15:33:58,823 [INFO]   → 처리불가: 제작품/주문제작 → 자동표준화 불가
+2026-03-09 15:33:58,824 [INFO] [21/35] 관리번호=28721313 품명=상하좌우 각도조절 라이트(32-58)
+2026-03-09 15:33:58,824 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:59,293 [INFO]   [9] 품명매핑: '상하좌우 각도조절 라이트(32-58)' → '블루 라이트 필터' [low]
+2026-03-09 15:33:59,294 [INFO]   [10] 속성미충족: ['사이즈', '화면비', '재질', '호환기종', '타입']
+2026-03-09 15:33:59,294 [INFO]   → 품명:블루 라이트 필터 | 제조사:시중품 | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_STORE_AS_MAKER', 'FLAG_CONFLICT_MODEL', 'FLAG_CATEGORY_UNKNOWN', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 15:33:59,295 [INFO] [22/35] 관리번호=28721333 품명=300MM LEC 계면활성제 범우 W-467
+2026-03-09 15:33:59,295 [INFO]   [6] FactFinder 스킵 (policy=CHEM_CENTERED)
+2026-03-09 15:33:59,309 [INFO]   [9] 품명매핑: '300MM LEC 계면활성제 범우 W-467' → '계면활성제' [medium]
+2026-03-09 15:33:59,310 [INFO]   [10] 속성미충족: ['용량', '중량', '순도', '등급', 'Cas.No', '입수량', '유해화학물질여부']
+2026-03-09 15:33:59,310 [INFO]   → 품명:계면활성제 | 제조사:시중품 | 모델명:2 | 정책:CHEM_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 15:33:59,311 [INFO] [23/35] 관리번호=28721397 품명=LG LCAP26-E ADS-40FSH-19 19025
+2026-03-09 15:33:59,311 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:33:59,750 [INFO]   [9] 품명매핑: 'LG LCAP26-E ADS-40FSH-19 19025G' → 'LG LCAP26-E ADS-40FSH-19 19025G' [low]
+2026-03-09 15:34:00,023 [INFO]   [11] 제조사 비표준: 'LG LCAP26-E ADS-40FSH-19 19025G' → 후보: []
+2026-03-09 15:34:00,023 [INFO]   → 품명:LG LCAP26-E ADS-40FSH-19 19025G | 제조사:LG LCAP26-E ADS-40FSH-19 19025G | 모델명:70 | 정책:GENERIC | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_CATEGORY_UNKNOWN', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:34:00,024 [INFO] [24/35] 관리번호=28721533 품명=SQ 6.5*6.5T
+2026-03-09 15:34:00,025 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:34:00,505 [INFO]   [9] 품명매핑: 'SQ 6.5*6.5T' → 'SQ 6.5*6.5T' [low]
+2026-03-09 15:34:00,506 [INFO]   → 품명:SQ 6.5*6.5T | 제조사:시중품 | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:34:00,507 [INFO] [25/35] 관리번호=28721554 품명=IDC센터(가산) 일반소모품 구매(26년 3월)
+2026-03-09 15:34:00,508 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:34:00,947 [INFO]   [9] 품명매핑: 'IDC센터(가산) 일반소모품 구매(26년 3월)' → 'IDC센터(가산) 일반소모품 구매(26년 3월)' [low]
+2026-03-09 15:34:00,948 [INFO]   → 품명:IDC센터(가산) 일반소모품 구매(26년 3월) | 제조사:시중품 | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:34:00,949 [INFO] [26/35] 관리번호=28721632 품명=20mm, 40mm
+2026-03-09 15:34:00,950 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:34:01,373 [INFO]   [9] 품명매핑: '20mm, 40mm' → '20mm, 40mm' [low]
+2026-03-09 15:34:01,588 [INFO]   [11] 제조사 비표준: 'MHL2-20D' → 후보: []
+2026-03-09 15:34:01,589 [INFO]   → 품명:20mm, 40mm | 제조사:MHL2-20D | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:34:01,589 [INFO] [27/35] 관리번호=28721693 품명=ebmpapst 17251, 17CM, 6224NM, 
+2026-03-09 15:34:01,590 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:34:02,049 [INFO]   [9] 품명매핑: 'ebmpapst 17251, 17CM, 6224NM, 24V, 12W' → 'ebmpapst 17251, 17CM, 6224NM, 24V, 12W' [low]
+2026-03-09 15:34:02,244 [INFO]   [11] 제조사 비표준: 'P00BMBKW' → 후보: ['KW', 'BK']
+2026-03-09 15:34:02,245 [INFO]   → 품명:ebmpapst 17251, 17CM, 6224NM, 24V, 12W | 제조사:P00BMBKW | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:34:02,245 [INFO] [28/35] 관리번호=28721695 품명=ZIC 마일리지 쿠폰 2000원권
+2026-03-09 15:34:02,246 [INFO]   [6] FactFinder 스킵 (policy=BRAND_CENTERED)
+2026-03-09 15:34:02,256 [INFO]   [9] 품명매핑: 'ZIC 마일리지 쿠폰 2000원권' → 'IC' [low]
+2026-03-09 15:34:02,257 [INFO]   [10] 속성미충족: ['사이즈', '핀수', '패키지타입', '용도']
+2026-03-09 15:34:02,257 [INFO]   → 품명:IC | 제조사:시중품 | 모델명:50000 | 정책:BRAND_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 15:34:02,257 [INFO] [29/35] 관리번호=28721820 품명=A4, 10EA/PK, 1PCS, PP합성필름, 레이저
+2026-03-09 15:34:02,258 [INFO]   FactFinder 실행: maker_missing
+2026-03-09 15:34:02,258 [INFO]   네이버 검색: A4, 10EA/PK, 1PCS, PP합성필름, 레이저방수라벨
+2026-03-09 15:34:03,618 [INFO]   [9] 품명매핑: 'A4, 10EA/PK, 1PCS, PP합성필름, 레이저방수라벨' → '방수라벨' [low]
+2026-03-09 15:34:03,619 [INFO]   [10] 속성미충족: ['사이즈', '평량', '색상', '입수량', '타입']
+2026-03-09 15:34:03,619 [INFO]   → 품명:방수라벨 | 제조사:시중품 | 모델명:1 | 정책:MODEL_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 15:34:03,620 [INFO] [30/35] 관리번호=28721822 품명=포세식 도기만 요청(색상:적색)
+2026-03-09 15:34:03,621 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:34:04,054 [INFO]   [9] 품명매핑: '포세식 도기만 요청(색상:적색)' → '포세식 도기만 요청(색상:적색)' [low]
+2026-03-09 15:34:04,055 [INFO]   → 품명:포세식 도기만 요청(색상:적색) | 제조사:시중품 | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:34:04,055 [INFO] [31/35] 관리번호=28721827 품명=포세식 기포관(pvc) 요청(색상:적색)
+2026-03-09 15:34:04,056 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:34:04,072 [INFO]   [9] 품명매핑: '포세식 기포관(pvc) 요청(색상:적색)' → 'PVC' [low]
+2026-03-09 15:34:04,073 [INFO]   [10] 속성미충족: ['용량', '중량', '순도', '등급', 'Cas.No', '입수량', '유해화학물질여부']
+2026-03-09 15:34:04,073 [INFO]   → 품명:PVC | 제조사:시중품 | 모델명:1 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 15:34:04,074 [INFO] [32/35] 관리번호=28721923 품명=MATERIAL:SUS304,SIZE:ID38.2 X 
+2026-03-09 15:34:04,074 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:34:04,526 [INFO]   [9] 품명매핑: 'MATERIAL:SUS304,SIZE:ID38.2 X OD44 X T1.5MM,ITEM NO:AR-E5103,Process:A-COMMON' → 'MATERIAL:SUS304,SIZE:ID38.2 X OD44 X T1.5MM,ITEM NO:AR-E5103,Process:A-COMMON' [low]
+2026-03-09 15:34:04,526 [INFO]   → 품명:MATERIAL:SUS304,SIZE:ID38.2 X OD44 X T1.5MM,ITEM NO:AR-E5103,Process:A-COMMON | 제조사:시중품 | 모델명:466 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:34:04,527 [INFO] [33/35] 관리번호=28721951 품명=950*550
+2026-03-09 15:34:04,528 [INFO]   처리불가: 제작품/주문제작 → 자동표준화 불가
+2026-03-09 15:34:04,528 [INFO]   → 처리불가: 제작품/주문제작 → 자동표준화 불가
+2026-03-09 15:34:04,528 [INFO] [34/35] 관리번호=28721973 품명=D/N:213-D1021,MATERIAL:LOW CAR
+2026-03-09 15:34:04,529 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 15:34:04,970 [INFO]   [9] 품명매핑: 'D/N:213-D1021,MATERIAL:LOW CARBON HP-MOD,SIZE:ID38.1 X 6MM(MSM),OUTLET,ETC:NEP FURNACE,Process:C-#2 ETHY. UNIT(HOT)' → 'D/N:213-D1021,MATERIAL:LOW CARBON HP-MOD,SIZE:ID38.1 X 6MM(MSM),OUTLET,ETC:NEP FURNACE,Process:C-#2 ETHY. UNIT' [low]
+2026-03-09 15:34:04,971 [INFO]   → 품명:D/N:213-D1021,MATERIAL:LOW CARBON HP-MOD,SIZE:ID38.1 X 6MM(MSM),OUTLET,ETC:NEP FURNACE,Process:C-#2 ETHY. UNIT | 제조사:시중품 | 모델명:30 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_CONFLICT_MODEL', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 15:34:04,971 [INFO] [35/35] 관리번호=28722041 품명=VITON 오링, 내경 9.25, 직경 1.78, 재질
+2026-03-09 15:34:04,972 [INFO]   [6] FactFinder 스킵 (policy=SPEC_CENTERED)
+2026-03-09 15:34:05,073 [INFO]   [9] 품명매핑: 'VITON 오링, 내경 9.25, 직경 1.78, 재질 불소고무, 1PACK = 100EA' → 'VITON 오링, 내경 9.25, 직경 1.78, 재질 불소고무, 1PACK = 100EA' [low]
+2026-03-09 15:34:05,278 [INFO]   [11] 제조사 비표준: '미스미' → 후보: []
+2026-03-09 15:34:05,279 [INFO]   → 품명:VITON 오링, 내경 9.25, 직경 1.78, 재질 불소고무, 1PACK = 100EA | 제조사:미스미 | 모델명:1 | 정책:SPEC_CENTERED | 플래그:['FLAG_CONFLICT_MODEL', 'FLAG_MAKER_NONSTANDARD']
+2026-03-09 15:34:05,829 [INFO] 
+결과 저장 완료: output\표준화결과_20260309_153405.xlsx
+2026-03-09 15:34:05,830 [INFO] ============================================================
+2026-03-09 15:34:05,830 [INFO] 처리 완료: 총 35건
+2026-03-09 15:34:05,830 [INFO]   - 표준화 성공: 33건
+2026-03-09 15:34:05,830 [INFO]   - 처리불가:   2건
+2026-03-09 15:34:05,831 [INFO]   - 수동검토 필요: 33건
+2026-03-09 15:34:05,831 [INFO] ============================================================

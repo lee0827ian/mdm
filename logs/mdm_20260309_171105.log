@@ -1,0 +1,428 @@
+2026-03-09 17:11:05,119 [INFO] ============================================================
+2026-03-09 17:11:05,119 [INFO] MDM 표준화 엔진 v1.1 시작
+2026-03-09 17:11:05,120 [INFO] 입력 파일: data/sample_input2.csv
+2026-03-09 17:11:05,130 [INFO] 총 35행 로드
+2026-03-09 17:11:05,159 [INFO] [1] RawInputNormalizer 완료
+2026-03-09 17:11:05,822 [INFO] [DB] StandardDBLoader 초기화 완료
+2026-03-09 17:11:05,824 [INFO] [1/35] 관리번호=28720870 품명=멜킨 반원형 폼롤러 EVA
+2026-03-09 17:11:05,842 [INFO]   [6] FactFinder 스킵 (policy=BRAND_CENTERED)
+2026-03-09 17:11:05,864 [INFO]   [9] 품명매핑: '멜킨 반원형 폼롤러 EVA' → '폼롤러' [medium]
+2026-03-09 17:11:05,865 [INFO]   [10] 속성미충족: ['사이즈', '재질', '용량', '중량', '입수량']
+2026-03-09 17:11:05,865 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:05,867 [INFO] [2/35] 관리번호=28720872 품명=AB 슬라이드 리바운드
+2026-03-09 17:11:05,868 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 17:11:06,032 [INFO]   [9] 품명매핑: 'AB 슬라이드 리바운드' → 'AB 슬라이드 리바운드' [low]
+2026-03-09 17:11:06,032 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,034 [INFO] [3/35] 관리번호=28720892 품명=ES-1100 스트라이크 PS락
+2026-03-09 17:11:06,035 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 17:11:06,270 [INFO]   [9] 품명매핑: 'ES-1100 스트라이크 PS락' → 'ES-1100 스트라이크 PS락' [low]
+2026-03-09 17:11:06,271 [INFO]   → 품명:ES-1100 스트라이크 PS락 | 제조사:시중품 | 모델명: | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_MODEL_MISSING', 'FLAG_STORE_AS_MAKER', 'FLAG_URL_ONLY_EVIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 17:11:06,272 [INFO] [4/35] 관리번호=28721041 품명=와샤
+2026-03-09 17:11:06,274 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 17:11:06,501 [INFO]   [9] 품명매핑: '와샤' → '와샤' [low]
+2026-03-09 17:11:06,502 [INFO]   → 품명:와샤 | 제조사:시중품 | 모델명: | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_MODEL_MISSING', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 17:11:06,502 [INFO] [5/35] 관리번호=28721055 품명=Accelerometer
+2026-03-09 17:11:06,505 [INFO]   [9] 품명매핑: 'Accelerometer' → '가속도센서' [high]
+2026-03-09 17:11:06,506 [INFO]   [10] 속성미충족: ['사이즈', '중량', '측정범위', '정격전압', '출력(W)', '배선사양']
+2026-03-09 17:11:06,507 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,509 [INFO] [6/35] 관리번호=28721059 품명=Accelerometer
+2026-03-09 17:11:06,511 [INFO]   [9] 품명매핑: 'Accelerometer' → '가속도센서' [high]
+2026-03-09 17:11:06,511 [INFO]   [10] 속성미충족: ['사이즈', '중량', '측정범위', '정격전압', '출력(W)', '배선사양']
+2026-03-09 17:11:06,511 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,513 [INFO] [7/35] 관리번호=28721070 품명=이어폰
+2026-03-09 17:11:06,516 [INFO]   [9] 품명매핑: '이어폰' → '이어폰' [high]
+2026-03-09 17:11:06,516 [INFO]   [10] 속성미충족: ['사이즈', '주파수', '출력인피던스', '구성', '타입']
+2026-03-09 17:11:06,516 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,519 [INFO] [8/35] 관리번호=28721109 품명=근접센서
+2026-03-09 17:11:06,521 [INFO]   [9] 품명매핑: '근접센서' → '근접센서' [high]
+2026-03-09 17:11:06,523 [INFO]   [10] 속성미충족: ['중량', '출력(W)']
+2026-03-09 17:11:06,523 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,526 [INFO] [9/35] 관리번호=28721118 품명=Flexible Hose
+2026-03-09 17:11:06,527 [INFO]   [6] FactFinder 스킵 (policy=SPEC_CENTERED)
+2026-03-09 17:11:06,547 [INFO]   [9] 품명매핑: 'Flexible Hose' → '플렉시블' [high]
+2026-03-09 17:11:06,547 [INFO]   [10] 속성미충족: ['색상', '입수량']
+2026-03-09 17:11:06,548 [INFO]   → 품명:플렉시블 | 제조사:시중품 | 모델명:K1Z-XSC-PU | 정책:SPEC_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 17:11:06,548 [INFO] [10/35] 관리번호=28721143 품명=마스크
+2026-03-09 17:11:06,550 [INFO]   [6] FactFinder 스킵 (policy=BRAND_CENTERED)
+2026-03-09 17:11:06,552 [INFO]   [9] 품명매핑: '마스크' → '마스크' [high]
+2026-03-09 17:11:06,552 [INFO]   [10] 속성미충족: ['사이즈', '재질', '색상', '등급', '사용시간', '입수량', '타입']
+2026-03-09 17:11:06,552 [INFO]   → 품명:마스크 | 제조사:시중품 | 모델명: | 정책:BRAND_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_MODEL_MISSING', 'FLAG_STORE_AS_MAKER', 'FLAG_URL_ONLY_EVIDENCE', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 17:11:06,553 [INFO] [11/35] 관리번호=28721145 품명=Flexible Hose
+2026-03-09 17:11:06,555 [INFO]   [6] FactFinder 스킵 (policy=SPEC_CENTERED)
+2026-03-09 17:11:06,576 [INFO]   [9] 품명매핑: 'Flexible Hose' → '플렉시블' [high]
+2026-03-09 17:11:06,577 [INFO]   [10] 속성미충족: ['재질', '색상', '입수량', '타입']
+2026-03-09 17:11:06,577 [INFO]   → 품명:플렉시블 | 제조사:시중품 | 모델명: | 정책:SPEC_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_MODEL_MISSING', 'FLAG_URL_ONLY_EVIDENCE', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 17:11:06,578 [INFO] [12/35] 관리번호=28721153 품명=Signal Conditional
+2026-03-09 17:11:06,580 [INFO]   [9] 품명매핑: 'Signal Conditional' → '신호변환기' [high]
+2026-03-09 17:11:06,580 [INFO]   [10] 속성미충족: ['사이즈', '포트수', '접속타입', '정격전압', '타입']
+2026-03-09 17:11:06,580 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,583 [INFO] [13/35] 관리번호=28721198 품명=OTHER INSTRUMENT ACCESSORY
+2026-03-09 17:11:06,586 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 17:11:06,587 [INFO]   [9] 품명매핑: 'OTHER INSTRUMENT ACCESSORY' → 'OTHER INSTRUMENT ACCESSORY' [high]
+2026-03-09 17:11:06,588 [INFO]   [10] 속성미충족: ['재질', '색상', '용도', '타입']
+2026-03-09 17:11:06,588 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,591 [INFO] [14/35] 관리번호=28721199 품명=OTHER INSTRUMENT ACCESSORY
+2026-03-09 17:11:06,592 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 17:11:06,593 [INFO]   [9] 품명매핑: 'OTHER INSTRUMENT ACCESSORY' → 'OTHER INSTRUMENT ACCESSORY' [high]
+2026-03-09 17:11:06,593 [INFO]   [10] 속성미충족: ['재질', '색상', '용도', '타입']
+2026-03-09 17:11:06,593 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,595 [INFO] [15/35] 관리번호=28721206 품명=MONITORING DEVICE
+2026-03-09 17:11:06,598 [INFO]   [9] 품명매핑: 'MONITORING DEVICE' → '모니터' [high]
+2026-03-09 17:11:06,599 [INFO]   [10] 속성미충족: ['화면사이즈', '패널타입', '해상도', '색상', '타입']
+2026-03-09 17:11:06,599 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,601 [INFO] [16/35] 관리번호=28721212 품명=감압밸브
+2026-03-09 17:11:06,602 [INFO]   [6] FactFinder 스킵 (policy=SPEC_CENTERED)
+2026-03-09 17:11:06,603 [INFO]   [9] 품명매핑: '감압밸브' → '감압밸브' [high]
+2026-03-09 17:11:06,604 [INFO]   [10] 속성미충족: ['중량', '사용유체', '사용압력', '접속구경', '포트형태', '작동타입']
+2026-03-09 17:11:06,604 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:06,607 [INFO] [17/35] 관리번호=28721228 품명=NOTEBOOK_LEGION PRO 7I_LENOVO_
+2026-03-09 17:11:06,608 [INFO]   FactFinder 실행: maker_missing
+2026-03-09 17:11:06,609 [INFO]   네이버 검색: B3237831
+2026-03-09 17:11:07,976 [INFO]   [9] 품명매핑: 'NOTEBOOK_LEGION PRO 7I_LENOVO_16INCH GEN 10' → '노트북' [high]
+2026-03-09 17:11:07,977 [INFO]   [10] 속성미충족: ['CPU', '그래픽카드', '패널', '메모리용량', '저장장치', 'ODD', '입출력포트', '네트워크', '구성']
+2026-03-09 17:11:07,977 [INFO]   → 품명:노트북 | 제조사:시중품 | 모델명:B3237831 | 정책:MODEL_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 17:11:07,977 [INFO] [18/35] 관리번호=28721242 품명=충전햄머드릴
+2026-03-09 17:11:07,979 [INFO]   [9] 품명매핑: '충전햄머드릴' → '충전햄머드릴' [high]
+2026-03-09 17:11:07,980 [INFO]   [10] 속성미충족: ['사이즈', 'RPM(분당회전수)', '중량', '토크(회전력)', '적용악세서리사이즈', '정격전력']
+2026-03-09 17:11:07,980 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:07,982 [INFO] [19/35] 관리번호=28721247 품명=기타 일반잡화
+2026-03-09 17:11:07,982 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 17:11:08,140 [INFO]   [9] 품명매핑: '기타 일반잡화' → '기타 일반잡화' [low]
+2026-03-09 17:11:08,141 [INFO]   → 품명:기타 일반잡화 | 제조사:시중품 | 모델명:JM00003393 | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_LOW_CONFIDENCE']
+2026-03-09 17:11:08,142 [INFO] [20/35] 관리번호=28721248 품명=토탈스테이션용 Ball Target
+2026-03-09 17:11:08,143 [INFO]   처리불가: 제작품/주문제작
+2026-03-09 17:11:08,143 [INFO]   → 처리불가: 제작품/주문제작
+2026-03-09 17:11:08,144 [INFO] [21/35] 관리번호=28721313 품명=더함 벽걸이 브라켓 LG 삼성 TV 호환 상하좌우 각도
+2026-03-09 17:11:08,145 [INFO]   FactFinder 실행: model_missing (MODEL_CENTERED)
+2026-03-09 17:11:08,145 [INFO]   네이버 검색: 더함 벽걸이 브라켓 LG 삼성 TV 호환 상하좌우 각도조절 라이트 티비거치대
+2026-03-09 17:11:09,223 [INFO]   NaverFact 성공: ['더함', '라이트컴']
+2026-03-09 17:11:09,322 [INFO]   [9] 품명매핑: '더함 벽걸이 브라켓 LG 삼성 TV 호환 상하좌우 각도조절 라이트 티비거치대' → '더함 벽걸이 브라켓 LG 삼성 TV 호환 상하좌우 각도조절 라이트 티비거치대' [low]
+2026-03-09 17:11:09,322 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:09,323 [INFO] [22/35] 관리번호=28721333 품명=300MM LEC 계면활성제 범우 W-467
+2026-03-09 17:11:09,324 [INFO]   [6] FactFinder 스킵 (policy=CHEM_CENTERED)
+2026-03-09 17:11:09,335 [INFO]   [9] 품명매핑: '300MM LEC 계면활성제 범우 W-467' → '계면활성제' [medium]
+2026-03-09 17:11:09,335 [INFO]   [10] 속성미충족: ['중량', '순도', '등급', 'Cas.No', '입수량', '유해화학물질여부']
+2026-03-09 17:11:09,335 [INFO]   → 품명:계면활성제 | 제조사:시중품 | 모델명:6300000761 | 정책:CHEM_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_ATTR_INCOMPLETE']
+2026-03-09 17:11:09,335 [INFO] [23/35] 관리번호=28721397 품명=모니터 전원 케이블
+2026-03-09 17:11:09,439 [INFO]   [9] 품명매핑: '모니터 전원 케이블' → '모니터 전원 케이블' [low]
+2026-03-09 17:11:09,439 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:09,441 [INFO] [24/35] 관리번호=28721533 품명=TMA 시편 REMOVE JIG
+2026-03-09 17:11:09,441 [INFO]   처리불가: 비표준확정 요청
+2026-03-09 17:11:09,441 [INFO]   → 처리불가: 비표준확정 요청
+2026-03-09 17:11:09,442 [INFO] [25/35] 관리번호=28721554 품명=시설자재
+2026-03-09 17:11:09,442 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 17:11:09,544 [INFO]   [9] 품명매핑: '시설자재' → '시설자재' [low]
+2026-03-09 17:11:09,544 [INFO]   → 품명:시설자재 | 제조사:시중품 | 모델명: | 정책:GENERIC | 플래그:['FLAG_SIJUNGPUM', 'FLAG_MODEL_MISSING', 'FLAG_LOW_CONFIDENCE', 'FLAG_CATEGORY_UNKNOWN']
+2026-03-09 17:11:09,545 [INFO] [26/35] 관리번호=28721632 품명=에어실린더
+2026-03-09 17:11:09,546 [INFO]   [9] 품명매핑: '에어실린더' → '에어실린더' [high]
+2026-03-09 17:11:09,546 [INFO]   [10] 속성미충족: ['튜브내경', '스트로크', '재질', '사용압력', '스위치수', '작동타입', '토크(회전력)', '실린더타입']
+2026-03-09 17:11:09,546 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:09,547 [INFO] [27/35] 관리번호=28721693 품명=Cooling Fan
+2026-03-09 17:11:09,548 [INFO]   [9] 품명매핑: 'Cooling Fan' → '쿨링팬' [high]
+2026-03-09 17:11:09,549 [INFO]   [10] 속성미충족: ['사이즈', '날개사이즈', '중량', 'RPM(분당회전수)', '풍량', '정격전력', '타입']
+2026-03-09 17:11:09,549 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:09,550 [INFO] [28/35] 관리번호=28721695 품명=상품권/티켓
+2026-03-09 17:11:09,551 [INFO]   [6] FactFinder 스킵 (policy=BRAND_CENTERED)
+2026-03-09 17:11:09,689 [INFO]   [9] 품명매핑: '상품권/티켓' → '상품권/티켓' [low]
+2026-03-09 17:11:09,689 [INFO]   → 품명:상품권/티켓 | 제조사:시중품 | 모델명:JM00002572 | 정책:BRAND_CENTERED | 플래그:['FLAG_SIJUNGPUM', 'FLAG_LOW_CONFIDENCE']
+2026-03-09 17:11:09,690 [INFO] [29/35] 관리번호=28721820 품명=방수라벨
+2026-03-09 17:11:09,691 [INFO]   FactFinder 실행: model_missing (MODEL_CENTERED)
+2026-03-09 17:11:09,691 [INFO]   네이버 검색: 방수라벨 PP
+2026-03-09 17:11:10,815 [INFO]   NaverFact 성공: ['한국폼텍']
+2026-03-09 17:11:10,819 [INFO]   [9] 품명매핑: '방수라벨' → '방수라벨' [high]
+2026-03-09 17:11:10,820 [INFO]   [10] 속성미충족: ['사이즈', '평량', '색상']
+2026-03-09 17:11:10,820 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:10,821 [INFO] [30/35] 관리번호=28721822 품명=포세식 도기
+2026-03-09 17:11:10,821 [INFO]   [6] FactFinder 스킵 (policy=GENERIC)
+2026-03-09 17:11:10,909 [INFO]   [9] 품명매핑: '포세식 도기' → '포세식 도기' [low]
+2026-03-09 17:11:10,909 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:10,910 [INFO] [31/35] 관리번호=28721827 품명=포세식 기포관
+2026-03-09 17:11:10,911 [INFO]   처리불가: 비표준확정 요청
+2026-03-09 17:11:10,911 [INFO]   → 처리불가: 비표준확정 요청
+2026-03-09 17:11:10,911 [INFO] [32/35] 관리번호=28721923 품명=SHOULDER PLUG GASKET(AR-E5103A
+2026-03-09 17:11:10,912 [INFO]   처리불가: 비표준확정 요청
+2026-03-09 17:11:10,912 [INFO]   → 처리불가: 비표준확정 요청
+2026-03-09 17:11:10,912 [INFO] [33/35] 관리번호=28721951 품명=폐기물봉투
+2026-03-09 17:11:10,913 [INFO]   처리불가: 비표준확정 요청
+2026-03-09 17:11:10,913 [INFO]   → 처리불가: 비표준확정 요청
+2026-03-09 17:11:10,913 [INFO] [34/35] 관리번호=28721973 품명=TETRA FITTING(5101-BIC1)
+2026-03-09 17:11:10,913 [INFO]   처리불가: 비표준확정 요청
+2026-03-09 17:11:10,913 [INFO]   → 처리불가: 비표준확정 요청
+2026-03-09 17:11:10,914 [INFO] [35/35] 관리번호=28722041 품명=AN 012
+2026-03-09 17:11:10,914 [INFO]   [6] FactFinder 스킵 (policy=SPEC_CENTERED)
+2026-03-09 17:11:11,001 [INFO]   [9] 품명매핑: 'AN 012' → 'AN 012' [low]
+2026-03-09 17:11:11,002 [ERROR]   행 처리 오류: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+Traceback (most recent call last):
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 238, in main
+    result = process_row(
+        row, ev_collector, policy_router,
+    ...<2 lines>...
+        logger,
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\main.py", line 168, in process_row
+    maker_result = maker_validator.validate(
+        fields['제조사'], original_name=original_maker
+    )
+  File "C:\Users\NBC02230024\Desktop\mdm_standardizer\pipeline\maker_validator.py", line 99, in validate
+    alias_resolved = self._resolve_alias(try_val)
+TypeError: MakerValidator._resolve_alias() missing 1 required positional argument: 'name'
+2026-03-09 17:11:11,413 [INFO] 
+결과 저장 완료: output\표준화결과_20260309_171111.xlsx
+2026-03-09 17:11:11,413 [INFO] ============================================================
+2026-03-09 17:11:11,413 [INFO] 처리 완료: 총 35건
+2026-03-09 17:11:11,413 [INFO]   - 표준화 성공: 10건
+2026-03-09 17:11:11,413 [INFO]   - 처리불가:   25건
+2026-03-09 17:11:11,413 [INFO]   - 수동검토 필요: 7건
+2026-03-09 17:11:11,413 [INFO] ============================================================
